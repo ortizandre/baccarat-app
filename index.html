@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Baccarat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Simulador de Partida de Baccarat</h1>
+        <section id="game">
+            <div id="players">
+                <div>
+                    <h2>Jugador</h2>
+                    <div id="player-cards" class="cards"></div>
+                    <div id="player-score" class="score"></div>
+                </div>
+                <div>
+                    <h2>Banca</h2>
+                    <div id="banker-cards" class="cards"></div>
+                    <div id="banker-score" class="score"></div>
+                </div>
+            </div>
+            <div id="controls">
+                <button id="deal-btn">Repartir</button>
+                <button id="reset-btn">Reiniciar</button>
+            </div>
+            <div id="result"></div>
+        </section>
+    </main>
+    <aside>
+        <h2>Reglas Oficiales del Baccarat</h2>
+        <ul>
+            <li>Se reparten dos cartas al Jugador y a la Banca.</li>
+            <li>Las cartas del 2 al 9 valen su valor nominal, el 10 y las figuras valen 0, el As vale 1.</li>
+            <li>Si la suma de las cartas es mayor a 9, solo se toma el último dígito (ejemplo: 15 = 5).</li>
+            <li>Si el Jugador o la Banca tienen 8 o 9 ("natural"), no se reparten más cartas.</li>
+            <li>El Jugador pide tercera carta si tiene 0-5, se planta con 6-7.</li>
+            <li>La Banca pide tercera carta según reglas específicas dependiendo de su puntuación y la tercera carta del Jugador.</li>
+            <li>Gana quien tenga la puntuación más alta (máximo 9).</li>
+        </ul>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
