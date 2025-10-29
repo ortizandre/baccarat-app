@@ -26,6 +26,22 @@
                 <button id="deal-btn">Repartir</button>
                 <button id="reset-btn">Reiniciar</button>
             </div>
+            <!-- Contadores: se muestran una vez se efectúe la primera repartida -->
+            <div id="counters"  aria-live="polite">
+                <h2 style="font-size:16px;">Conteo de Victorias</h2>
+                <div class="counter">
+                    <strong id="player-wins">0</strong>
+                    <span>Jugador</span>
+                </div>
+                <div class="counter">
+                    <strong id="banker-wins">0</strong>
+                    <span>Banca</span>
+                </div>
+                <div class="counter">
+                    <strong id="ties">0</strong>
+                    <span>Empates</span>
+                </div>
+            </div>
             <div id="result"></div>
         </section>
     </main>

@@ -89,3 +89,28 @@ aside ul {
     line-height: 1.7;
     color: #444;
 }
+
+/* Contadores de victorias */
+#counters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.counter {
+    background: #fff;
+    border: 1px solid #d0d7dd;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    min-width: 110px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.counter strong {
+    display: block;
+    font-size: 1.4rem;
+    color: #2980b9; /* color principal (Jugador) */
+}
+.counter:nth-child(2) strong { color: #c0392b; } /* Banca */
+.counter:nth-child(3) strong { color: #7f8c8d; } /* Empates */
+.hidden { display: none; }
